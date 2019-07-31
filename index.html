@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <script type="text/javascript" src="./vendor/phaser.min.js"></script>
+    <script type="text/javascript" src="src/boot.js"></script>
+    <script type="text/javascript" src="src/preload.js"></script>
+    <script type="text/javascript" src="src/gametitle.js"></script>
+    <script type="text/javascript" src="src/gameplay.js"></script>
+    <style>
+      @import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        min-height: 500px;
+        overflow-y: hidden;
+        background-color: #d4780e;
+      }
+      .preload-font1 {
+        left: -100px;
+        position: absolute;
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preload-font1">.</div>
+    <script>
+      (function() {
+        var game = new Phaser.Game(900, 1200, Phaser.AUTO, null);
+        game.state.add("Boot", boot);
+        game.state.add("Preload", preload);
+        game.state.add("GameTitle", gameTitle);
+        game.state.add("GamePlay", gamePlay);
+        game.state.start("Boot");
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+{
+   "gameItems":[
+      "brownies",
+      "vaporizer",
+      "vapepen",
+      "joint",
+      "blunt",
+      "pipe",
+      "bong",
+      "waterbottlebong"
+   ],
+   "gameDesc":[
+      {
+         "name":"Pot Brownies",
+         "order":0
+      },
+      {
+         "name":"Vaporizer",
+         "order":1
+      },
+      {
+         "name":"Vape Pen",
+         "order":1
+      },
+      {
+         "name":"Joint",
+         "order":2
+      },
+      {
+         "name":"Blunt",
+         "order":3
+      },
+      {
+         "name":"Glass Pipe",
+         "order":4
+      },
+      {
+         "name":"Glass Bong",
+         "order":5
+      },
+      {
+         "name":"Water-bottle Bong",
+         "order":5
+      }
+   ],
+   "tips":[
+     {
+      "image": "vaporizer",
+      "message": "Vaporizers reduce the amount of harmful substances inhaled."
+     },
+     {
+       "image": "joint",
+       "message": "Use a longer filter when creating joints."
+     },
+     {
+       "image": "brownies",
+       "message": "Edibles can cause a delay effect; don’t take too much."
+     },
+     {
+       "image": "blunt",
+       "message": "Avoid adding tobacco to marijuana."
+     }
+   ]
+}
